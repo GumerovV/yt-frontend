@@ -1,0 +1,7 @@
+.avatar {
+  @apply flex gap-4 mb-4 text-gray-400 text-sm;
+
+  .name {
+    @apply text-white text-2xl font-semibold;
+  }
+}

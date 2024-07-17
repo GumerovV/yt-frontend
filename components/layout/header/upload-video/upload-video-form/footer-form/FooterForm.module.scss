@@ -1,0 +1,17 @@
+.footer {
+  @apply w-full absolute bottom-2 right-1 px-4 flex items-center justify-between text-white text-lg;
+
+  > div:first-child {
+    @apply flex gap-2 text-gray-500;
+
+    svg {
+      @apply text-primary;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  > div:last-child {
+    @apply flex justify-center;
+  }
+}

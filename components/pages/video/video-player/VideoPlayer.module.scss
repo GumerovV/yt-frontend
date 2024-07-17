@@ -1,0 +1,28 @@
+.wrapper {
+  @apply relative flex items-center justify-center rounded-2xl shadow overflow-hidden text-white;
+
+  .player {
+    @apply w-full;
+  }
+
+  .controls {
+    @apply absolute p-2.5 px-5 text-xl flex items-center justify-between bottom-5 rounded-lg bg-gray-900 opacity-80 transition-all duration-1000;
+    width: calc(100% - 2.5rem);
+
+    &.hide {
+      @apply bottom-0 opacity-0;
+    }
+
+    .progressBarWrapper {
+      @apply w-3/4 h-1.5 bg-gray-500 opacity-50 rounded overflow-hidden;
+
+      .progressBar {
+        @apply h-full bg-white;
+      }
+    }
+
+    .timeControls {
+      @apply flex items-center justify-center text-white text-sm gap-1;
+    }
+  }
+}

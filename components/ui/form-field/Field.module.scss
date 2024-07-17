@@ -1,0 +1,23 @@
+.input{
+  @apply relative mb-6 block;
+
+
+  > input{
+    @apply px-2 py-4 w-full block text-white outline-0 rounded-lg;
+    background-color: #353340;
+    transition: box-shadow .4s ease;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+
+    &::placeholder{
+      color: gray;
+    }
+
+    &:focus{
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .error{
+    @apply absolute left-0 -bottom-5 text-red-700 text-xs;
+  }
+}

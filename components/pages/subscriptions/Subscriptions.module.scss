@@ -1,0 +1,11 @@
+.wrapper{
+  @apply grid grid-cols-2;
+
+  .user {
+    @apply flex gap-10 mb-4;
+
+    > div:first-child {
+      @apply w-1/2;
+    }
+  }
+}

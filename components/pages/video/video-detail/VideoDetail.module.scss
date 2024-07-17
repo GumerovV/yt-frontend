@@ -1,0 +1,47 @@
+.detail {
+  @apply flex space-x-6 justify-between;
+
+  > div:first-child {
+    @apply basis-2/3;
+  }
+
+  > div:last-child {
+    @apply basis-5/12;
+  }
+
+  h1 {
+    @apply text-3xl text-white font-semibold;
+  }
+
+  article {
+    @apply text-base text-gray-500 mt-4 whitespace-pre-wrap;
+  }
+
+  .actions {
+    @apply flex items-center justify-between mb-9;
+
+    > button:first-child {
+      width: 54%;
+    }
+
+    > button:last-child {
+      width: 40%;
+    }
+
+    > button {
+      @apply flex items-center justify-center rounded-lg py-2.5 text-white;
+    }
+  }
+}
+
+.statistics {
+  > div {
+    @apply text-gray-500 flex items-center mb-4;
+
+    > svg {
+      @apply mr-2;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

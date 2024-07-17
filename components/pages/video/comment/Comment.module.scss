@@ -1,0 +1,54 @@
+.comments {
+  @apply relative p-5 rounded-lg;
+  background-color: #252836;
+
+  h2 {
+    @apply text-2xl text-white;
+  }
+
+  p {
+    @apply text-white text-lg font-extralight;
+  }
+
+  .line {
+    @apply h-0.5 w-full my-4 bg-gray-500 opacity-50;
+  }
+
+  .comment_item {
+    @apply h-96 overflow-hidden hover:overflow-y-scroll transition-all duration-300;
+
+    &::-webkit-scrollbar {
+      width: 7px; /* Ширина всего элемента навигации */
+    }
+
+    &::-webkit-scrollbar-track {
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-gray-500 opacity-50 rounded-full;
+
+    }
+
+    p:first-child{
+      @apply text-lg font-medium;
+    }
+
+    p:nth-child(2) {
+      @apply text-sm text-gray-400;
+    }
+
+    > span {
+      @apply block text-gray-400 text-sm;
+    }
+  }
+
+  .comment_form {
+    @apply absolute bottom-0;
+    width: calc(100% - 2.5rem);
+
+    > span {
+      @apply block text-gray-400 text-sm;
+    }
+  }
+}

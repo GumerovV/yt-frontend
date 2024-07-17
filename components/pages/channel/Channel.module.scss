@@ -1,0 +1,11 @@
+.profile {
+  @apply w-1/3 text-gray-400 text-sm mb-10;
+
+  .avatar {
+    @apply flex gap-4 mb-4;
+
+    .name {
+      @apply text-white text-2xl font-semibold;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.info {
+  @apply text-gray-500 text-lg;
+
+  .thumbnail {
+    @apply content-center text-center font-medium border-2 border-gray-500 rounded-lg;
+    width: 344px;
+    height: 193px;
+  }
+
+  .details {
+    > div {
+      @apply flex flex-col gap-1 font-light my-2;
+
+      > span:first-child {
+        @apply font-medium;
+      }
+    }
+  }
+}

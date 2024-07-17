@@ -1,0 +1,8 @@
+.catalog {
+  @apply flex flex-wrap gap-7;
+
+  > div {
+    @apply mb-2.5 text-white;
+    width: 23.5%;
+  }
+}

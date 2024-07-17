@@ -1,0 +1,30 @@
+.avatar {
+  @apply rounded-full relative flex items-center justify-center;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  width: 57px;
+  height: 57px;
+
+  img {
+    border-radius: 50%;
+  }
+
+  svg {
+    @apply text-svg;
+  }
+
+  > span {
+    @apply relative rounded-full;
+    border-radius: 50%;
+  }
+
+  .isVerified {
+    @apply absolute bottom-0 right-0 text-lg bg-white;
+
+    svg {
+      @apply text-blue-400;
+      position: relative;
+      top: 0;
+      right: 0;
+    }
+  }
+}

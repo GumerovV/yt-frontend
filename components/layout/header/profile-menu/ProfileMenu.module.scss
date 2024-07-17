@@ -1,0 +1,45 @@
+.wrapper {
+  @apply px-2;
+
+  > button {
+    @apply flex items-center cursor-pointer transition-all duration-300;
+
+    img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+
+    .name {
+      @apply text-white mx-3 opacity-80;
+    }
+
+    svg {
+      @apply text-svg;
+    }
+  }
+
+  .profile-menu{
+    @apply p-4 absolute right-2 w-60 z-20 rounded-lg shadow-block animate-scaleIn;
+    top: calc(100% + 1.4rem);
+    background-color: #272532;
+
+    > ul {
+      > li {
+        > a,
+        > button {
+          @apply relative py-2.5 block text-white transition-colors;
+
+          &::after {
+            @apply absolute w-0 left-0 -bottom-0.5 h-0.5 bg-primary bg-opacity-70 rounded-lg transition-all duration-500;
+            content: '';
+          }
+
+          &:hover::after {
+            @apply w-full;
+          }
+        }
+      }
+    }
+  }
+}

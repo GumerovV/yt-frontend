@@ -1,0 +1,41 @@
+.form {
+  @apply w-7/12;
+
+  textarea {
+    @apply resize-none;
+    height: 250px;
+  }
+}
+
+.avatarWrapper {
+  @apply flex gap-5 mb-5 text-white;
+
+  img {
+    border-radius: 50%;
+  }
+
+  > div {
+    @apply text-center content-end;
+  }
+
+  .avatarLarge {
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .avatarMedium {
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .avatarSmall {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
